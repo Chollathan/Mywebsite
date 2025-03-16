@@ -1,29 +1,30 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav className="bg-black p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl font-bold">
-          <a href="/">3แมวจำกัด</a>
-        </div>
-        <ul className="flex space-x-6 text-white">
+        {/* โลโก้ */}
+        <h1 className="text-white text-2xl font-bold">3Maw-website</h1>
+
+        {/* เมนูนำทาง */}
+        <ul className="flex space-x-6">
           <li>
-            <a href="/" className="hover:text-gray-200">Home</a>
+            <Link to="/" className="text-white hover:text-red-600">Home</Link>
           </li>
           <li>
-            <a href="/service" className="hover:text-gray-200">Service</a>
+            <Link to="/about" className="text-white hover:text-red-600">About</Link>
           </li>
           <li>
-            <a href="/about" className="hover:text-gray-200">About</a>
+            <Link to="/contact" className="text-white hover:text-red-600">Contact</Link>
           </li>
           <li>
-            <a href="/contact" className="hover:text-gray-200">Contact</a>
+            <Link to="/service" className="text-white hover:text-red-600">Service</Link>
           </li>
         </ul>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
