@@ -16,6 +16,7 @@ function Hero() {
           </a>
           <a href="/contact" className="bg-gray-700 hover:bg-gray-800 text-white px-6 py-3 rounded-lg text-lg font-semibold">
             ติดต่อเรา
+
           </a>
         </div>
       </div>
