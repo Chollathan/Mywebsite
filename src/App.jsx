@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/page/Home'
 import About from './components/page/About'
 import Service from './components/page/Service';
-import Contact from './components/page/Contact'
+import Portfolio from './components/page/Portfolio';
 import NotFound from './components/page/NotFound';
 import ChatButton from './components/ChatButton';
 
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/service" element={<Service />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

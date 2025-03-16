@@ -13,14 +13,15 @@ function Navbar() {
             <Link to="/" className="text-white hover:text-red-600">Home</Link>
           </li>
           <li>
+            <Link to="/service" className="text-white hover:text-red-600">Service</Link>
+          </li>
+          <li>
             <Link to="/about" className="text-white hover:text-red-600">About</Link>
           </li>
           <li>
-            <Link to="/contact" className="text-white hover:text-red-600">Contact</Link>
+            <Link to="/portfolio" className="text-white hover:text-red-600">Portfolio</Link>
           </li>
-          <li>
-            <Link to="/service" className="text-white hover:text-red-600">Service</Link>
-          </li>
+         
         </ul>
       </div>
     </nav>
